@@ -1,0 +1,18 @@
+ create table application_properties (id integer not null auto_increment,application varchar(255), profile varchar(255), label varchar(255), prop_key varchar(255), prop_value varchar(255),dateCreated datetime, primary key (id),UNIQUE (prop_key)); 
+insert into application_properties (application, profile, label , prop_key, prop_value ,dateCreated ) values ('onetimepinservice','dev','latest','spring.datasource.driver-class-name','com.mysql.cj.jdbc.Driver',now());
+insert into application_properties (application, profile, label , prop_key, prop_value ,dateCreated ) values ('onetimepinservice','dev','latest','spring.datasource.url','jdbc:mysql://127.0.0.1:3306/wallet_development?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC',now());
+insert into application_properties (application, profile, label , prop_key, prop_value ,dateCreated ) values ('onetimepinservice','dev','latest','spring.datasource.username','mpesab2c',now());
+insert into application_properties (application, profile, label , prop_key, prop_value ,dateCreated ) values ('onetimepinservice','dev','latest','spring.datasource.password','password123',now());
+insert into application_properties (application, profile, label , prop_key, prop_value ,dateCreated ) values ('onetimepinservice','dev','latest','spring.jpa.show-sql','true',now());
+insert into application_properties (application, profile, label , prop_key, prop_value ,dateCreated ) values ('onetimepinservice','dev','latest','spring.jpa.properties.dialect','org.hibernate.dialect.MYSQL5Dialect',now());
+insert into application_properties (application, profile, label , prop_key, prop_value ,dateCreated ) values ('onetimepinservice','dev','latest','spring.jpa.ddl-auto','update',now());
+insert into application_properties (application, profile, label , prop_key, prop_value ,dateCreated ) values ('onetimepinservice','dev','latest','otp.config.expireMins','5',now());
+insert into application_properties (application, profile, label , prop_key, prop_value ,dateCreated ) values ('onetimepinservice','dev','latest','otp.config.minRange','10000',now());
+insert into application_properties (application, profile, label , prop_key, prop_value ,dateCreated ) values ('onetimepinservice','dev','latest','otp.config.maxRange','90000',now());
+insert into application_properties (application, profile, label , prop_key, prop_value ,dateCreated ) values ('onetimepinservice','dev','latest','otp.config.successStatus','1',now());
+insert into application_properties (application, profile, label , prop_key, prop_value ,dateCreated ) values ('onetimepinservice','dev','latest','otp.config.failedStatus','0',now());
+insert into application_properties (application, profile, label , prop_key, prop_value ,dateCreated ) values ('onetimepinservice','dev','latest','otp.config.expiredStatus','2',now());
+insert into application_properties (application, profile, label , prop_key, prop_value ,dateCreated ) values ('onetimepinservice','dev','latest','otp.config.secretKey','otpengine',now());
+insert into application_properties (application, profile, label , prop_key, prop_value ,dateCreated ) values ('onetimepinservice','dev','latest','otp.config.salt','otpengine123',now());
+insert into application_properties (application, profile, label , prop_key, prop_value ,dateCreated ) values ('onetimepinservice','dev','latest','otp.config.smsWebService','http://localhost:9001/API/SMS_API/smsWrapper.php',now());
+insert into application_properties (application, profile, label , prop_key, prop_value ,dateCreated ) values ('onetimepinservice','dev','latest','otp.config.smsMethod','processRequest',now());
